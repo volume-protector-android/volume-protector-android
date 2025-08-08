@@ -1,16 +1,32 @@
-## Hi there 👋
+# Volume Protector Pro - Android Build
 
-<!--
-**volume-protector-android/volume-protector-android** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+## Quick Start (GitHub Codespaces)
 
-Here are some ideas to get you started:
+1. Upload this ZIP to a new GitHub repository
+2. Click "Create Codespace" - gets you Android Studio in the browser
+3. Run: `./gradlew bundleRelease` 
+4. Download AAB from `app/build/outputs/bundle/release/`
+5. Upload to Google Play
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+## What This Gives You
+
+- ✅ Real Android development environment 
+- ✅ Google's official build tools
+- ✅ Proper AAB generation that Google Play accepts
+- ✅ No local installation required
+- ✅ Runs in browser via GitHub Codespaces
+
+## Commands
+
+```bash
+# Build release AAB
+./gradlew bundleRelease
+
+# Clean and rebuild
+./gradlew clean bundleRelease
+
+# List generated files
+ls -la app/build/outputs/bundle/release/
+```
+
+The generated AAB will be properly signed and formatted using Google's official tools.
